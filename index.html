@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Moser - Psicóloga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
+  </head>
+<body style="height: 1000px;">
+    
+       <div>
+           <header>
+               <img src="./img/psi (1).png" draggable="false" alt="">
+               <h1>Paula Móser</h1>
+            </header>
+        </div>
+        
+        
+        <div class="hero container-fluid">
+            
+            <h1>Descubre Tu Equilibrio Interno</h1>
+            <h3>Atención psicológica profesional personalizada que estimula bienestar y desarrollo personal.</h3>
+        </div>
+        
+        <section>
+            <div class="container col-xxl-10 px-4 py-5 about-me-back">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./img/photo-1640471617790-bc250b9162ae.jpeg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6 ">
+                    <h1 class="display-5 fw-bold  lh-1 mb-3 about-me-p">Sobre Mí</h1>
+                    <p class="lead about-me-p">Soy Paula Móser psicóloga ubicada en Armstrong y Las Parejas, Santa Fe. Comprometida en brindar atención profesional y personalizada a mis pacientes.</p>
+                    <p class="lead about-me-p">Estoy altamente capacitada para ayudar a las personas a superar sus desafíos emocionales y mentales, ofreciendo un ambiente de apoyo y confianza.</p>
+
+                    
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section>
+          <div class="title-servicios">
+            <h1>Servicios</h1>
+          </div>
+          <div class="servicios container-md">
+      <div class="container service">
+                 <img src="./img/photo-1498673394965-85cb14905c89.jpeg" alt="">
+                 <h2>Terapia individual</h2>
+                 </div>
+      <div class="container service">  
+                 <img src="./img/photo-1434030216411-0b793f4b4173.jpeg" alt="">
+             <h2>Terapia de pareja</h2>
+           </div>
+      <div class="container service">   <img src="./img/photo-1495653797063-114787b77b23.jpeg" alt="">
+                <h2>Terapia familiar</h2>
+              </div>
+              <div class="container text-center service"><img src="./img/photo-1612878010854-1250dfc5000a.jpeg" alt="">
+                <h2>Orientacion vocacional</h2>
+              </div>
+              <div class="container text-center service"><img src="./img/photo-1614278555773-fcadf80a58a5.jpeg" alt="">
+                <h2>Terapia de ansiedad</h2>
+              </div>
+              <div class="container text-center service"><img src="./img/photo-1516810714657-e654b97f1d80.jpeg" alt="">
+                <h2>Apoyo emocional a adolescentes</h2>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="contact">
+              <h2>Ponte en contácto</h2>
+              <p>Comunícate conmigo utilizando el formulario de contacto a continuación. Esperamos con interés escuchar de ti y ayudarte con tus necesidades de construcción.</p>
+              <form action="procesar-form.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email" >Correo electrónico:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="numero de telefono">Numero de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <input type="submit" value="Enviar">
+              
+              
+              
+              
+              </form>
+            </div>
+          </section>
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section></section>
+    <section></section>
+    <section></section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+            
+            var nombre = document.getElementById('nombre').value;
+            if (nombre.trim() === '') {
+                alert('Por favor, ingrese su nombre.');
+                event.preventDefault();
+                return;
+            }
+
+            
+            var email = document.getElementById('email').value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, ingrese un correo electrónico válido.');
+                event.preventDefault();
+                return;
+            }
+
+            
+            alert('Formulario enviado con éxito!');
+        });
+    </script>
+</body>
+</html>

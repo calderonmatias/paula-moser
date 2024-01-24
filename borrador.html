@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .columna {
+      flex: 0 0 calc(33.33% - 20px);
+      margin: 10px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+  <title>Grid Responsive sin Bootstrap</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="columna">
+    <!-- Contenido de la primera columna -->
+    <div class="card">
+      <h5>Columna 1</h5>
+      <p>Contenido de la columna 1.</p>
+    </div>
+  </div>
+  <div class="columna">
+    <!-- Contenido de la segunda columna -->
+    <div class="card">
+      <h5>Columna 2</h5>
+      <p>Contenido de la columna 2.</p>
+    </div>
+  </div>
+  <div class="columna">
+    <!-- Contenido de la tercera columna -->
+    <div class="card">
+      <h5>Columna 3</h5>
+      <p>Contenido de la columna 3.</p>
+    </div>
+  </div>
+  <div class="columna">
+    <!-- Contenido de la cuarta columna (en la segunda fila) -->
+    <div class="card">
+      <h5>Columna 4</h5>
+      <p>Contenido de la columna 4.</p>
+    </div>
+  </div>
+  <div class="columna">
+    <!-- Contenido de la quinta columna (en la segunda fila) -->
+    <div class="card">
+      <h5>Columna 5</h5>
+      <p>Contenido de la columna 5.</p>
+    </div>
+  </div>
+  <div class="columna">
+    <!-- Contenido de la sexta columna (en la segunda fila) -->
+    <div class="card">
+      <h5>Columna 6</h5>
+      <p>Contenido de la columna 6.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

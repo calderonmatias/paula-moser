@@ -37,7 +37,7 @@
                   </div>
                   <div class="col-lg-6 ">
                     <h1 class="display-5 fw-bold  lh-1 mb-3 about-me-p">Sobre Mí</h1>
-                    <p class="lead about-me-p">Soy Paula Móser psicóloga ubicada en Armstrong y Las Parejas, Santa Fe. Comprometida en brindar atención profesional y personalizada a mis pacientes.</p>
+                    <p class="lead about-me-p">Soy Paula Móser psicóloga ubicada en Armstrong y Las Parejas, Santa Fe, Argentina. Comprometida en brindar atención profesional y personalizada a mis pacientes de cualquier parte del mundo.</p>
                     <p class="lead about-me-p">Estoy altamente capacitada para ayudar a las personas a superar sus desafíos emocionales y mentales, ofreciendo un ambiente de apoyo y confianza.</p>
 
                     
@@ -60,7 +60,7 @@
              <h2>Terapia de pareja</h2>
            </div>
       <div class="container service">   <img src="./img/photo-1495653797063-114787b77b23.jpeg" alt="">
-                <h2>Terapia familiar</h2>
+                <h2>Terapia vincular</h2>
               </div>
               <div class="container text-center service"><img src="./img/photo-1612878010854-1250dfc5000a.jpeg" alt="">
                 <h2>Orientacion vocacional</h2>
@@ -74,21 +74,21 @@
             </div>
           </section>
           <section>
-            <div class="contact">
+            <div class="contact container">
+              <div class="contact-me">
               <h2>Ponte en contácto</h2>
-              <p>Comunícate conmigo utilizando el formulario de contacto a continuación. Esperamos con interés escuchar de ti y ayudarte con tus necesidades de construcción.</p>
-              <form action="procesar-form.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email" >Correo electrónico:</label>
-                <input type="text" id="email" name="email" required>
-                <label for="numero de telefono">Numero de teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
-                <input type="submit" value="Enviar">
-              
-              
-              
-              
+              <p>Comunícate conmigo utilizando el formulario de contacto a continuación. Espero con interés escuchar de vos y ayudarte con tus necesidades de construcción.</p>
+            </div>
+              <form class="formulario container-sm" action="" method="post">
+                <input type="text" placeholder="Nombre..." id="nombre" name="nombre" required>
+                <input type="text" placeholder="Correo electrónio..." id="email" name="email" required>
+                
+                <input type="tel" placeholder="Numero de telefono..." id="telefono" name="telefono">
+                <input type="submit" value="Enviar" id="submit">
+                
+                
+                
+                
               </form>
             </div>
           </section>
@@ -126,27 +126,7 @@
     <section></section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
-      document.getElementById('formularioContacto').addEventListener('submit', function(event) {
-            
-            var nombre = document.getElementById('nombre').value;
-            if (nombre.trim() === '') {
-                alert('Por favor, ingrese su nombre.');
-                event.preventDefault();
-                return;
-            }
-
-            
-            var email = document.getElementById('email').value;
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Por favor, ingrese un correo electrónico válido.');
-                event.preventDefault();
-                return;
-            }
-
-            
-            alert('Formulario enviado con éxito!');
-        });
+      
     </script>
 </body>
 </html>

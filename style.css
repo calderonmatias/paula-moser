@@ -86,9 +86,10 @@ header h1{
         font-size: 1rem;
     }
 }
-@media (max-width:544px){
-    .servicios img{
-        width: 300px;
+@media (max-width:546px){
+    .service img{
+        height: 100px;
+        width: 200px;
     }
 }
 .hero h3{
@@ -110,7 +111,7 @@ header h1{
 .servicios{
     display: grid;
     grid-template-columns: 
-    repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    repeat(auto-fit, minmax(min(350px), 1fr));
     
     background-color: #CED5DE;
     gap: 32px;
@@ -131,7 +132,7 @@ header h1{
     margin-bottom: 30px;
     margin-top: 110px;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 77px;
+    font-size: 55px;
     color: #111827;
     text-shadow: 3px 3px #4B5875;
 
@@ -147,14 +148,106 @@ header h1{
 .service{
     text-align: center;
 }
-
-
-
-
-
-
-
-
+.contact{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.formulario{
+    grid-area: 1 / 2 / 2 / 3 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#nombre{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#email{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#telefono{
+    grid-area: 2 / 1 / 3 / 3;
+    
+}
+.formulario input{
+    border-radius: 5px;
+    background-color: #BDC4CC;
+    border: 0;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    
+}
+.formulario input:hover{
+    box-shadow: 1px 1px #111827;
+}
+#submit{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    grid-area: 3 / 2 ;
+    border: 1px solid black;
+    
+    margin-left: 50%;
+    background-color:#CBD3DC ;
+}
+.formulario input:focus{
+    outline: none;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+}
+.contact-me h2{
+    font-size:  3rem;
+   
+    
+    
+    
+}
+.contact-me p{
+    font-size: 1.5rem;
+    
+}
+@media(max-width:992px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+    }
+    
+    #submit{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media(max-width:536px){
+    input{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    #submit{
+        text-align: center;
+        width: 25%;
+        margin-left: 75%;
+        
+    }
+}
 
 
 
